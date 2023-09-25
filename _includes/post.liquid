@@ -1,0 +1,14 @@
+---
+layout: layout
+---
+
+{% if header %}
+	<p>
+	<img src="{{ header }}">
+	</p>
+{% endif %}
+
+<h2>{{ title }}</h2>
+<p><i>Published {{ date | dtFormat }}</i></p>
+
+{{ content }}
