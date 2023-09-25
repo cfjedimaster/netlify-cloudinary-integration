@@ -1,0 +1,27 @@
+---
+title: Home Page for Blog
+layout: layout
+---
+
+<!-- hero image -->
+<img src="images/home.jpg">
+
+<h2>Blog Demo</h2>
+
+<p>
+This is my blog. It will be informative. It will amuse you. It will blah blah etc and so forth. I'm just filling up
+some space here and I'd rather not use lorem ipsum. So how are you? How are you doing? In general, this is a stressful
+time for us all, but luckily we have cats. Cats make everything better. 
+</p>
+
+<h2>Posts</h2>
+
+<ul>
+{% for post in collections.posts reversed %}
+  <li><a href="{{post.url}}">{{ post.data.title }}</a> ({{ post.date | dtFormat }})</li>
+{% endfor %}
+</ul>
+
+<p>
+All photos source from <a href="https://picsum.photos">Lorem Picsum</a>.
+</p>
