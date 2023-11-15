@@ -3,4 +3,5 @@
 
   [plugins.inputs]
   cloudName = "raymondcamden"
-  maxSize = { width = 800, height = 600 }
+  maxSize.width = 80
+  maxSize.height = 60
